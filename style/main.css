@@ -10,6 +10,7 @@
 
 body {
     font-family: "Quicksand", serif;
+    margin: auto 9rem;
 }
 
 /* shared style */
@@ -85,6 +86,14 @@ button {
 
 hr {
     display: none;
+}
+
+.marquee {
+    color: blueviolet;
+    font-weight: 700;
+    border: 1px dashed tomato;
+    padding: 4px;
+    background: #01adfd41;
 }
 
 /* banner section style */
@@ -199,10 +208,12 @@ hr {
 /* Stories styles */
 
 .stories {
+    width: 100%;
+    background: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+
+.stories_title {
     text-align: center;
-    align-items: center;
-    background-image: url(../assets/bg.png);
-    background: url(image), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 }
 
 .stories h3 {
@@ -212,47 +223,59 @@ hr {
 }
 
 .stories_container {
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    gap: 20px;
     margin: 4rem auto;
-    text-align: center;
+}
+
+.stories_container_left{
+    border-radius: 12px;
+    background: #fff;
+
+}
+
+.story_box1, .story_box2, .story_box3, .story_box4{
+    background: #fff;
+    border-radius: 16px;
+}
+
+.stories_container_left .left_stories_img{
+    width: 540px;
+    height: 337px;
+    
 }
 
 
-.stories_container img{
-    margin-bottom: -15px;
+.stories_container_right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    
+}
+
+.right_stories_img{
+    width: 291px;
+    height: 177px;
+    border-radius: 16px 16px 0 0;
 }
 
 .story_text{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    padding: 20px;
-}
-.stories_container2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 5rem;
-    gap: 1rem;
+    padding: 1rem 10px;
 }
 
-.story_box1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.stories_title {
+.story_title {
     color: rgb(0, 0, 0);
     font-size: 1rem;
     font-weight: 700;
     margin-top: 2rem;
     text-align: left;
+    margin-bottom: 1rem;
+    padding: 10px 1rem;
 }
 
-.stories_container1 .stories_description {
+.stories_description {
     color: rgb(102, 102, 102);
     font-family: Raleway;
     font-size: 1rem;
@@ -261,13 +284,15 @@ hr {
     margin-top: 2rem;
 }
 
+
 .story_btn1 {
     font-size: 1.3rem;
     font-weight: 700;
     padding: 10px 20px;
     border-radius: 3rem;
     background: rgb(60, 216, 232);
-    margin-top: -2rem;
+    margin-top: -3rem;
+    margin-left: 2rem;
 }
 
 .story_btn2 {
@@ -276,7 +301,8 @@ hr {
     padding: 10px 20px;
     border-radius: 3rem;
     background: rgb(149, 178, 38);
-    margin-top: -2rem;
+    margin-top: -3rem;
+    margin-left: 2rem;
 }
 
 .story_btn3 {
@@ -285,17 +311,23 @@ hr {
     padding: 10px 20px;
     border-radius: 3rem;
     background: rgb(93, 88, 240);
-    margin-top: -2rem;
+    margin-top: -3rem;
+    margin-left: 2rem;
 }
 
-.stories_btn {
-    margin-bottom: 5rem;
+
+.story_button {
+    border-radius: 12px;
+    text-align: center;
+}
+
+.story_button .story_button_style{
+    color: white;
+    background-color: black;
     font-size: 1.3rem;
     font-weight: 700;
     padding: 10px 20px;
-    border-radius: 12px;
-    color: white;
-    background: rgb(17, 17, 17);
+    margin-bottom: 5rem;
 }
 
 /* footer section styles */
@@ -305,7 +337,7 @@ hr {
     justify-content: space-around;
     align-items: center;
     background: #01ACFD;
-    height: 90vh;
+    height: 519px;
 }
 
 .footer_logo_box {
@@ -350,14 +382,14 @@ hr {
     padding: 5px;
 }
 
-.about_school a{
+.about_school a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 1.3rem;
     font-weight: 500;
 }
 
-.about_school a:hover{
+.about_school a:hover {
     color: rgba(0, 0, 255, 0.514);
     background-color: rgba(176, 186, 187, 0.363);
     font-size: 120%;
