@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* font-family: "Quicksand", serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Quicksand", serif;
+}
+
+/* shared style */
+
+.orange{
+    color: rgb(254, 163, 1);
+}
+
+.skyblue{
+    color: rgb(1, 172, 253);
+}
+.skyblue2{
+    color: rgb(5, 212, 223);
+}
+.blue{
+    color: rgb(93, 88, 239);
+}
+
+
+/* header_contain style */
+
+.header_contain {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo_box h2 {
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.menubar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.menubar .nav {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.header_contain li {
+    list-style-type: none;
+}
+
+.header_contain a {
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    border: none;
+}
+
+/* banner section style */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.banner_contain h3{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.banner_contain p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgb(17, 17, 17);
+    margin-top: 1.5rem;
+}
+
+.banner_btn{
+    background: rgb(17, 17, 17);
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
