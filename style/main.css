@@ -457,6 +457,7 @@ hr {
     }
     hr {
         display: block;
+        margin-bottom: 1rem;
     }
     .banner{
         flex-direction: column-reverse;
